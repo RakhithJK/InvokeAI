@@ -5,7 +5,6 @@ import { useAppDispatch, useAppSelector } from 'app/storeHooks';
 import IAISwitch from 'common/components/IAISwitch';
 import { setHiresFix } from 'features/options/store/optionsSlice';
 import { useTranslation } from 'react-i18next';
-import ImageToImageStrength from '../ImageToImage/ImageToImageStrength';
 
 /**
  * Hires Fix Toggle
@@ -27,10 +26,6 @@ const HiresOptions = () => {
         fontSize={'md'}
         isChecked={hiresFix}
         onChange={handleChangeHiresFix}
-      />
-      <ImageToImageStrength
-        label={t('options:img2imgStrength')}
-        styleClass="main-option-block image-to-image-strength-main-option"
       />
     </Flex>
   );
